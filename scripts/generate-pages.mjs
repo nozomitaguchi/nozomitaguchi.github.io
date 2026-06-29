@@ -4,7 +4,7 @@ import path from "node:path";
 const rootDir = path.resolve(new URL("..", import.meta.url).pathname);
 const siteUrl = "https://nozomitaguchi.github.io";
 const siteTitle = "おなかの上のパソコンより";
-const cacheKey = "thin-type-1";
+const cacheKey = "public-preview-1";
 
 const pageImages = {
   "hokkaido-trip-en": "/assets/hokkaido-trip-en.jpg",
