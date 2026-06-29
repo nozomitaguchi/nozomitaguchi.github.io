@@ -1,0 +1,41 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" fill="#e7dfd0"/>
+  <rect width="1200" height="750" fill="url(#soft)"/>
+  <path d="M0 518h1200v232H0z" fill="url(#bottom)"/>
+  <g opacity=".22" stroke="#706450" stroke-width="4">
+    <path d="M600 96v520"/>
+    <path d="M164 136h872M164 206h872M164 276h872M164 346h872M164 416h872"/>
+  </g>
+  <g transform="translate(176 152)">
+    <rect width="314" height="314" rx="34" fill="#fffaf0" opacity=".72"/>
+    <path d="M42 42h230L42 272V42Z" fill="#7F52FF"/>
+    <path d="M42 272 272 42v230H42Z" fill="#E24462"/>
+    <path d="M42 272 157 157 272 272H42Z" fill="#F18E33"/>
+    <path d="M42 42h230L157 157 42 42Z" fill="#2F8DFF"/>
+  </g>
+  <g transform="translate(712 152)">
+    <rect width="314" height="314" rx="34" fill="#fffaf0" opacity=".72"/>
+    <g transform="translate(54 48)">
+      <path d="M20 34c54-36 150-36 204 0-54 36-150 36-204 0Z" fill="#D53D3D"/>
+      <path d="M20 106c54-36 150-36 204 0-54 36-150 36-204 0Z" fill="#D53D3D"/>
+      <path d="M20 178c54-36 150-36 204 0-54 36-150 36-204 0Z" fill="#D53D3D"/>
+      <path d="M20 34c54 36 150 36 204 0M20 106c54 36 150 36 204 0M20 178c54 36 150 36 204 0" stroke="#8f2020" stroke-width="8" opacity=".4"/>
+    </g>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800">
+    <text x="238" y="548" fill="#fffaf0" font-size="56">Kotlin</text>
+    <text x="780" y="548" fill="#fffaf0" font-size="56">Scala</text>
+    <text x="540" y="544" fill="#fffaf0" font-size="42" opacity=".76">vs</text>
+  </g>
+  <defs>
+    <linearGradient id="soft" x1="156" y1="74" x2="1048" y2="732" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffaf0" stop-opacity=".28"/>
+      <stop offset=".55" stop-color="#e7dfd0" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#9a7438" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="600" y1="518" x2="600" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e1d19" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1e1d19" stop-opacity=".64"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "name": "nozomitaguchi",
+  "short_name": "nozomitaguchi",
+  "description": "Personal garden log for blog, works, and music.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f0e7",
+  "theme_color": "#f4f0e7",
+  "icons": [
+    {
+      "src": "./assets/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

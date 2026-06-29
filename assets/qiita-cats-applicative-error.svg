@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">ApplicativeError MonadError cats thumbnail</title>
+  <desc id="desc">Two cats for ApplicativeError and MonadError concepts.</desc>
+  <rect width="960" height="600" rx="28" fill="#fff7e8"/>
+  <g>
+    <rect x="0" y="0" width="480" height="600" fill="#fff7e8"/>
+    <svg x="0" y="0" width="480" height="600" viewBox="0 1460 650 680" preserveAspectRatio="xMidYMid meet">
+      <image href="cats-fp-concepts.png" width="1984" height="2140"/>
+    </svg>
+  </g>
+  <g>
+    <rect x="480" y="0" width="480" height="600" fill="#fff7e8"/>
+    <svg x="480" y="0" width="480" height="600" viewBox="650 1460 760 680" preserveAspectRatio="xMidYMid meet">
+      <image href="cats-fp-concepts.png" width="1984" height="2140"/>
+    </svg>
+  </g>
+  <path d="M480 36v528" stroke="#eadcc5" stroke-width="6" stroke-linecap="round"/>
+</svg>

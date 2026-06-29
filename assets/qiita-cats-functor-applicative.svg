@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Functor Apply Applicative FlatMap cats thumbnail</title>
+  <desc id="desc">Four cats for Functor, Apply, Applicative, and FlatMap concepts.</desc>
+  <rect width="960" height="600" rx="28" fill="#fff7e8"/>
+  <g>
+    <rect x="0" y="0" width="480" height="300" fill="#fff7e8"/>
+    <svg x="0" y="0" width="480" height="300" viewBox="0 245 496 640" preserveAspectRatio="xMidYMid meet">
+      <image href="cats-fp-concepts.png" width="1984" height="2140"/>
+    </svg>
+  </g>
+  <g>
+    <rect x="480" y="0" width="480" height="300" fill="#fff7e8"/>
+    <svg x="480" y="0" width="480" height="300" viewBox="496 245 496 640" preserveAspectRatio="xMidYMid meet">
+      <image href="cats-fp-concepts.png" width="1984" height="2140"/>
+    </svg>
+  </g>
+  <g>
+    <rect x="0" y="300" width="480" height="300" fill="#fff7e8"/>
+    <svg x="0" y="300" width="480" height="300" viewBox="992 245 496 640" preserveAspectRatio="xMidYMid meet">
+      <image href="cats-fp-concepts.png" width="1984" height="2140"/>
+    </svg>
+  </g>
+  <g>
+    <rect x="480" y="300" width="480" height="300" fill="#fff7e8"/>
+    <svg x="480" y="300" width="480" height="300" viewBox="0 950 640 650" preserveAspectRatio="xMidYMid meet">
+      <image href="cats-fp-concepts.png" width="1984" height="2140"/>
+    </svg>
+  </g>
+  <path d="M480 26v548M28 300h904" stroke="#eadcc5" stroke-width="6" stroke-linecap="round"/>
+</svg>

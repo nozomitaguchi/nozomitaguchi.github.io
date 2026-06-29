@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="どこまでが僕？">
+  <rect width="1200" height="720" rx="28" fill="#b9dce5"/>
+  <g fill="#f08d50" opacity=".9">
+    <circle cx="278" cy="240" r="34"/>
+    <circle cx="430" cy="190" r="26"/>
+    <circle cx="610" cy="250" r="40"/>
+    <circle cx="820" cy="196" r="30"/>
+    <circle cx="944" cy="292" r="24"/>
+  </g>
+  <g fill="none" stroke="#4f6f5f" stroke-linecap="round" stroke-width="16" opacity=".78">
+    <path d="M278 274v220"/>
+    <path d="M430 216v278"/>
+    <path d="M610 290v204"/>
+    <path d="M820 226v268"/>
+    <path d="M944 316v178"/>
+    <path d="M170 500h860"/>
+  </g>
+</svg>

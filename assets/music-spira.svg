@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="スピラ">
+  <rect width="1200" height="720" rx="28" fill="#29313a"/>
+  <path d="M0 620h1200" stroke="#c58a55" stroke-width="18" opacity=".38"/>
+  <g fill="#f2c36d" opacity=".86">
+    <circle cx="170" cy="150" r="14"/>
+    <circle cx="245" cy="230" r="10"/>
+    <circle cx="346" cy="170" r="12"/>
+    <circle cx="814" cy="210" r="14"/>
+    <circle cx="970" cy="150" r="10"/>
+  </g>
+  <path d="M330 585c90-210 190-318 300-318s204 108 284 318" fill="none" stroke="#d18e54" stroke-width="24" stroke-linecap="round"/>
+  <path d="M430 590c62-126 126-190 194-190s126 64 180 190" fill="none" stroke="#5f8790" stroke-width="24" stroke-linecap="round"/>
+</svg>

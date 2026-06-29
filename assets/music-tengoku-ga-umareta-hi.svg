@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="天国が生まれた日">
+  <rect width="1200" height="720" rx="28" fill="#f0e6cd"/>
+  <g fill="none" stroke="#a77d33" stroke-linecap="round" stroke-width="18" opacity=".58">
+    <path d="M180 500c160-220 300-260 420-120s250 92 420-120"/>
+    <path d="M230 420h740"/>
+    <path d="M280 500h640"/>
+  </g>
+  <g fill="#d9b557">
+    <circle cx="380" cy="270" r="20"/>
+    <circle cx="470" cy="220" r="12"/>
+    <circle cx="760" cy="238" r="16"/>
+    <circle cx="850" cy="292" r="10"/>
+  </g>
+</svg>

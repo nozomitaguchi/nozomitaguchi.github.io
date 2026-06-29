@@ -1,0 +1,53 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" fill="#6f8795"/>
+  <rect width="1200" height="750" fill="url(#paper)"/>
+  <path d="M0 528h1200v222H0z" fill="url(#shade)"/>
+  <g opacity=".28" stroke="#315f72" stroke-width="6" stroke-linecap="round">
+    <path d="M132 164h244M196 230h356M122 318h254M782 150h276M728 238h360M776 320h228"/>
+    <path d="M426 218c84-72 216-80 308-20M466 326c80 60 184 64 272 18M502 430c56 44 138 50 204 16"/>
+  </g>
+  <g opacity=".2" fill="#fffaf0">
+    <circle cx="124" cy="124" r="52"/>
+    <circle cx="1088" cy="124" r="64"/>
+    <circle cx="1018" cy="524" r="72"/>
+  </g>
+  <g transform="translate(414 126)">
+    <path d="M147 81 94 30l-15 85" fill="#d99a9b" stroke="#1f2d34" stroke-width="9" stroke-linejoin="round"/>
+    <path d="m317 82 55-52 14 87" fill="#d99a9b" stroke="#1f2d34" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M98 200c0-96 68-156 176-156s176 60 176 156c0 114-72 202-176 202S98 314 98 200Z" fill="#c7ced2" stroke="#1f2d34" stroke-width="10"/>
+    <path d="M154 144c22-20 54-21 76 0M318 144c22-20 54-21 76 0" stroke="#1f2d34" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="197" cy="205" r="34" fill="#fffaf0" stroke="#1f2d34" stroke-width="8"/>
+    <circle cx="351" cy="205" r="34" fill="#fffaf0" stroke="#1f2d34" stroke-width="8"/>
+    <circle cx="207" cy="199" r="11" fill="#1f2d34"/>
+    <circle cx="361" cy="199" r="11" fill="#1f2d34"/>
+    <path d="M255 250c12 9 26 9 38 0" stroke="#1f2d34" stroke-width="8" stroke-linecap="round"/>
+    <path d="m274 228 15 15h-30l15-15Z" fill="#1f2d34"/>
+    <path d="M158 290c68 30 164 30 232 0" stroke="#1f2d34" stroke-width="10" stroke-linecap="round"/>
+    <path d="M118 330c-36 38-56 78-56 120 0 82 94 132 212 132s212-50 212-132c0-42-20-82-56-120" fill="#c7ced2"/>
+    <path d="M118 330c-36 38-56 78-56 120 0 82 94 132 212 132s212-50 212-132c0-42-20-82-56-120" stroke="#1f2d34" stroke-width="10" stroke-linecap="round"/>
+    <path d="M167 404c36 28 78 42 124 42s88-14 124-42" stroke="#fffaf0" stroke-width="14" stroke-linecap="round" opacity=".75"/>
+    <path d="M176 444h196" stroke="#1f2d34" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 28"/>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M278 514c-42-28-70-64-70-106s28-78 70-106" stroke="#254f65" stroke-width="10"/>
+    <path d="M922 302c42 28 70 64 70 106s-28 78-70 106" stroke="#254f65" stroke-width="10"/>
+    <path d="M304 392h120M776 392h120" stroke="#254f65" stroke-width="10"/>
+    <path d="M286 280c52-50 120-76 204-78M714 202c84 2 152 28 204 78" stroke="#254f65" stroke-width="7" opacity=".65"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" fill="#fffaf0" opacity=".72">
+    <text x="120" y="154" font-size="74">λ</text>
+    <text x="1002" y="586" font-size="64">map</text>
+    <text x="146" y="610" font-size="52">&lt;/&gt;</text>
+  </g>
+  <defs>
+    <linearGradient id="paper" x1="86" y1="44" x2="1104" y2="728" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8fa6a5" stop-opacity=".5"/>
+      <stop offset=".52" stop-color="#6f8795" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#315f72" stop-opacity=".28"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="600" y1="528" x2="600" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e1d19" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1e1d19" stop-opacity=".68"/>
+    </linearGradient>
+  </defs>
+</svg>
