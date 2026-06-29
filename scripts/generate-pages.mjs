@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const rootDir = path.resolve(new URL("..", import.meta.url).pathname);
-const siteUrl = "https://www.ntaguchi.com";
+const siteUrl = "https://nozomitaguchi.github.io";
 const siteTitle = "おなかの上のパソコンより";
 const cacheKey = "thin-type-1";
 
