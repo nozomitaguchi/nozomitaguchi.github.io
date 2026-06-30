@@ -3,7 +3,7 @@ title: "またね"
 type: "music"
 date: "2026-06-01"
 displayDate: "2026.06"
-summary: "別れ際の余韻を残す曲"
+summary: "Lyrics / production notes / audio"
 status: "published"
 tags: ["song"]
 audioUrl: "./assets/audio/matane.mp3"

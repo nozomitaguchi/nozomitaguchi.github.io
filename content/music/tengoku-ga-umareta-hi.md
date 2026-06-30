@@ -3,7 +3,7 @@ title: "天国が生まれた日"
 type: "music"
 date: "2026-06-01"
 displayDate: "2026.06"
-summary: "タイトルから景色を広げる曲"
+summary: "Lyrics / production notes / audio"
 status: "published"
 tags: ["song"]
 audioUrl: "./assets/audio/tengoku-ga-umareta-hi.mp3"
