@@ -831,6 +831,22 @@ p {
   line-height: 1.7;
 }
 
+.app-hero-media {
+  overflow: hidden;
+  width: min(640px, 100%);
+  margin: 0 auto;
+  border-radius: 10px;
+  background: rgba(192, 229, 242, 0.55);
+  box-shadow: 0 24px 58px rgba(74, 61, 42, 0.1);
+}
+
+.app-hero-media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .music-player {
   display: grid;
   gap: 16px;

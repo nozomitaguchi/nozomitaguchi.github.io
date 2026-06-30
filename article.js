@@ -128,6 +128,27 @@ function renderAudio(data) {
   `;
 }
 
+function resolveAssetUrl(value) {
+  if (!value) return "";
+  return value.startsWith("./assets/") ? value.replace("./assets/", "/assets/") : value;
+}
+
+function renderAppHero(data) {
+  if (!data.appHeroVideoUrl) return "";
+
+  const videoUrl = resolveAssetUrl(data.appHeroVideoUrl);
+  const posterUrl = resolveAssetUrl(data.thumbnail);
+  const posterAttribute = posterUrl ? ` poster="${escapeHtml(posterUrl)}"` : "";
+
+  return `
+    <section class="app-hero-media" aria-label="まるまる電卓の紹介動画">
+      <video autoplay muted loop playsinline preload="metadata"${posterAttribute}>
+        <source src="${escapeHtml(videoUrl)}" type="video/webm" />
+      </video>
+    </section>
+  `;
+}
+
 function resolveSlug() {
   const embeddedSlug = article?.dataset.post;
   if (embeddedSlug) return embeddedSlug;
@@ -165,7 +186,7 @@ async function loadArticle() {
   titleNode.textContent = title;
   dateNode.textContent = data.displayDate || "";
   dateNode.dateTime = data.date || "";
-  bodyNode.innerHTML = `${renderAudio(data)}${renderMarkdown(stripLeadingTitle(body, title))}`;
+  bodyNode.innerHTML = `${renderAppHero(data)}${renderAudio(data)}${renderMarkdown(stripLeadingTitle(body, title))}`;
 }
 
 loadArticle().catch((error) => {
