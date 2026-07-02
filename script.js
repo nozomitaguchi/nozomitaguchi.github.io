@@ -220,6 +220,13 @@ const writingItems = [
     url: "https://qiita.com/nozomitaguchi/items/40dd6a4ad23afb889f69",
   },
   {
+    kind: "hatena",
+    date: "2021.12",
+    title: "Cats の関数覚え書き",
+    note: "Scala / cats / Alternative / Align / CoflatMap",
+    url: "https://developers.microad.co.jp/entry/2021/12/13/120000",
+  },
+  {
     kind: "qiita",
     date: "2021.11",
     title: "Cats の関数覚え書き(Foldable, Reducible, Traverse, TraverseFilter)",
@@ -246,6 +253,14 @@ const writingItems = [
     title: "Cats の関数覚え書き(Functor, Apply, Applicative, FlatMap)",
     note: "Scala / cats",
     url: "https://qiita.com/nozomitaguchi/items/24ab70f921f1e013d49b",
+  },
+  {
+    kind: "hatena",
+    date: "2021.08",
+    title: "Scala With Cats を読む前に知っておきたかったこと",
+    note: "Scala / cats / reading notes",
+    image: "./assets/cats-fp-concepts.png",
+    url: "https://developers.microad.co.jp/entry/2021/08/10/063000",
   },
   {
     kind: "qiita",
@@ -292,6 +307,7 @@ const visibleCounts = {
 const labels = {
   app: "App",
   docswell: "Docswell",
+  hatena: "Hatena",
   music: "Music",
   other: "Lifelog",
   qiita: "Qiita",
@@ -309,6 +325,14 @@ const icons = {
     <svg class="service-docswell" aria-hidden="true" viewBox="0 0 24 24">
       <rect x="4" y="5" width="16" height="12" rx="2.5" />
       <path d="M8 20h8M10 17v3M14 17v3" />
+    </svg>
+  `,
+  hatena: `
+    <svg class="service-icon service-hatena" aria-hidden="true" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 4.3 7.8 10l.8 8.1c2.2.8 4.6.8 6.8 0l.8-8.1L12 4.3Z" />
+      <path d="M12 4.3v9.1" />
+      <circle cx="12" cy="13.7" r="1.2" />
     </svg>
   `,
   other: `
@@ -366,6 +390,10 @@ function resolveThumbnail(item) {
     if (/Functor|Apply|Applicative|FlatMap/.test(item.title)) {
       return "./assets/qiita-cats-functor-applicative.jpg";
     }
+    return "./assets/thumb-qiita-functions.svg";
+  }
+  if (item.kind === "hatena") {
+    if (/Scala With Cats/.test(item.title)) return "./assets/cats-fp-concepts.png";
     return "./assets/thumb-qiita-functions.svg";
   }
   if (item.image) return item.image;

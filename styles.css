@@ -391,8 +391,28 @@ p {
   color: #5d7f91;
 }
 
-.filter-button .service-icon,
-.archive-kind .service-icon {
+.filter-button .service-hatena,
+.archive-kind .service-hatena {
+  color: #00a4de;
+}
+
+.filter-button .service-hatena,
+.archive-kind .service-hatena {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.filter-button .service-hatena path:first-of-type,
+.archive-kind .service-hatena path:first-of-type,
+.filter-button .service-hatena circle:last-child,
+.archive-kind .service-hatena circle:last-child {
+  fill: currentColor;
+  stroke: none;
+}
+
+.filter-button .service-icon:not(.service-hatena),
+.archive-kind .service-icon:not(.service-hatena) {
   fill: currentColor;
   stroke: none;
 }
