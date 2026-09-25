@@ -69,6 +69,38 @@ function renderInline(value) {
   return escaped.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>');
 }
 
+function renderList(lines) {
+  let html = "";
+  let depth = 0;
+
+  lines.forEach((line) => {
+    const [, indentation, content] = line.match(/^(\s*)-\s+(.+)$/);
+    const targetDepth = Math.min(depth + 1, Math.floor(indentation.length / 2) + 1);
+
+    if (targetDepth > depth) {
+      html += "<ul><li>";
+      depth = targetDepth;
+    } else if (targetDepth === depth) {
+      html += "</li><li>";
+    } else {
+      while (depth > targetDepth) {
+        html += "</li></ul>";
+        depth -= 1;
+      }
+      html += "</li><li>";
+    }
+
+    html += renderInline(content);
+  });
+
+  while (depth > 0) {
+    html += "</li></ul>";
+    depth -= 1;
+  }
+
+  return html;
+}
+
 function renderMarkdown(markdown) {
   const codeBlocks = [];
   const withoutCode = markdown.replace(/```([\s\S]*?)```/g, (_, code) => {
@@ -78,7 +110,7 @@ function renderMarkdown(markdown) {
   });
 
   return withoutCode
-    .split(/\n{2,}/)
+    .split(/\n[ \t]*\n+/)
     .map((block) => block.trim())
     .filter(Boolean)
     .map((block) => {
@@ -92,8 +124,8 @@ function renderMarkdown(markdown) {
       }
 
       const lines = block.split("\n");
-      if (lines.every((line) => line.startsWith("- "))) {
-        return `<ul>${lines.map((line) => `<li>${renderInline(line.slice(2))}</li>`).join("")}</ul>`;
+      if (lines.every((line) => /^(\s*)-\s+(.+)$/.test(line))) {
+        return renderList(lines);
       }
 
       if (lines.every((line) => line.startsWith("> "))) {
