@@ -216,7 +216,7 @@ async function loadArticle() {
     return;
   }
 
-  const response = await fetch(path);
+  const response = await fetch(path, { cache: "no-cache" });
   if (!response.ok) throw new Error(`Failed to load ${path}`);
 
   const { data, body } = parseFrontmatter(await response.text());
