@@ -872,6 +872,34 @@ p {
   object-fit: cover;
 }
 
+.novel-hero {
+  overflow: hidden;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.novel-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-body .novel-link a {
+  display: inline-block;
+  border-radius: 6px;
+  background: var(--green);
+  padding: 12px 18px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.article-body .novel-link a:hover,
+.article-body .novel-link a:focus-visible {
+  filter: brightness(0.9);
+}
+
 .music-player {
   display: grid;
   gap: 16px;

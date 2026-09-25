@@ -8,17 +8,18 @@
 content/
   app/
   music/
+  novel/
   blog/
 ```
 
-一覧では `app` と `music` を Creation、`other` を Lifelog、`qiita`, `zenn`, `docswell` を Techblog として扱います。
+一覧では `app`、`music`、`novel` を Creation、`other` を Lifelog、`qiita`, `zenn`, `docswell` を Techblog として扱います。
 
 ## Shared frontmatter
 
 ```yaml
 ---
 title: "表示タイトル"
-type: "app | music | blog"
+type: "app | music | novel | blog"
 source: "blog | qiita | zenn | other"
 date: "2024-12-01"
 displayDate: "2024.12"
@@ -33,7 +34,7 @@ tags: ["archive"]
 ## Fields
 
 - `title`: 必須。カードに常時表示する。
-- `type`: 必須。`app`, `music`, `blog` のいずれか。`blog` は文章全体の大枠として扱う。
+- `type`: 必須。`app`, `music`, `novel`, `blog` のいずれか。`blog` は文章全体の大枠として扱う。
 - `source`: `type: "blog"` のとき必須。生活ログは `other`、外部ブログは `qiita`, `zenn`, `docswell`。
 - `date`: 推奨。並び順に使う。月だけの場合も `YYYY-MM-01` にする。
 - `displayDate`: 任意。カードに表示する日付。今は Lifelog と Techblog で表示する。
@@ -69,6 +70,16 @@ sourceUrl: ""
 series: ""
 ```
 
+Novel:
+
+```yaml
+type: "novel"
+thumbnail: "./assets/finder-book-desk-photo.jpg"
+url: "https://kakuyomu.jp/works/11054822663094452322"
+```
+
+本文は `content/novel/` 内の Markdown に追記する。作品ページへのリンクは `url` から表示する。
+
 ## Rule of thumb
 
 カードは「画像、タイトル、種別、日付」だけで成立させます。説明文は必要なときだけ現れる補助情報として扱います。
@@ -81,6 +92,7 @@ series: ""
 /app/app-slug.html
 /blog/article-slug.html
 /music/song-slug.html
+/novel/novel-slug.html
 ```
 
 各ページには `canonical`、OGP、Twitter Card のメタタグを記事ごとに埋め込みます。

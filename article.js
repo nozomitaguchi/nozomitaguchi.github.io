@@ -5,6 +5,7 @@ const posts = {
   "securities-sales-representative": "/content/blog/securities-sales-representative.md",
   "moving-and-job-change": "/content/blog/moving-and-job-change.md",
   "marumaru-calculator": "/content/app/marumaru-calculator.md",
+  finder: "/content/novel/finder.md",
   spira: "/content/music/spira.md",
   kochobai: "/content/music/kochobai.md",
   matane: "/content/music/matane.md",
@@ -149,12 +150,23 @@ function renderAppHero(data) {
   `;
 }
 
+function renderNovelHero(data) {
+  if (data.type !== "novel" || !data.thumbnail) return "";
+  const imageUrl = resolveAssetUrl(data.thumbnail);
+  return `<figure class="novel-hero"><img src="${escapeHtml(imageUrl)}" alt="FINDERの本を机に置いた写真" /></figure>`;
+}
+
+function renderNovelLink(data) {
+  if (data.type !== "novel" || !data.url) return "";
+  return `<p class="novel-link"><a href="${escapeHtml(data.url)}" target="_blank" rel="noopener noreferrer">カクヨムで『FINDER』を読む ↗</a></p>`;
+}
+
 function resolveSlug() {
   const embeddedSlug = article?.dataset.post;
   if (embeddedSlug) return embeddedSlug;
 
   const pathParts = window.location.pathname.replace(/\.html$/, "").split("/").filter(Boolean);
-  if ((pathParts[0] === "blog" || pathParts[0] === "music" || pathParts[0] === "app") && pathParts[1]) {
+  if (["blog", "music", "app", "novel"].includes(pathParts[0]) && pathParts[1]) {
     return pathParts[1];
   }
 
@@ -186,7 +198,7 @@ async function loadArticle() {
   titleNode.textContent = title;
   dateNode.textContent = data.displayDate || "";
   dateNode.dateTime = data.date || "";
-  bodyNode.innerHTML = `${renderAppHero(data)}${renderAudio(data)}${renderMarkdown(stripLeadingTitle(body, title))}`;
+  bodyNode.innerHTML = `${renderAppHero(data)}${renderNovelHero(data)}${renderAudio(data)}${renderMarkdown(stripLeadingTitle(body, title))}${renderNovelLink(data)}`;
 }
 
 loadArticle().catch((error) => {

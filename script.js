@@ -1,5 +1,12 @@
 const creationItems = [
   {
+    kind: "novel",
+    title: "FINDER",
+    note: "カメラを持つ旅人の連作小説",
+    image: "./assets/finder-book-desk-photo.jpg",
+    url: "./novel/finder.html",
+  },
+  {
     kind: "app",
     title: "まるまる電卓",
     note: "Learning app",
@@ -309,6 +316,7 @@ const labels = {
   docswell: "Docswell",
   hatena: "Hatena",
   music: "Music",
+  novel: "Novel",
   other: "Lifelog",
   qiita: "Qiita",
   zenn: "Zenn",
@@ -346,6 +354,12 @@ const icons = {
       <path d="M9 18V6l10-2v12" />
       <circle cx="7" cy="18" r="3" />
       <circle cx="17" cy="16" r="3" />
+    </svg>
+  `,
+  novel: `
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M12 5c-2.1-1.3-5-1.5-8-.7v14c3-.8 5.9-.6 8 .7 2.1-1.3 5-1.5 8-.7v-14c-3-.8-5.9-.6-8 .7Z" />
+      <path d="M12 5v14" />
     </svg>
   `,
   qiita: `
