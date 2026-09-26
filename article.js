@@ -5,6 +5,7 @@ const posts = {
   "securities-sales-representative": "/content/blog/securities-sales-representative.md",
   "moving-and-job-change": "/content/blog/moving-and-job-change.md",
   "marumaru-calculator": "/content/app/marumaru-calculator.md",
+  "yubisaki-canvas": "/content/app/yubisaki-canvas.md",
   finder: "/content/novel/finder.md",
   spira: "/content/music/spira.md",
   kochobai: "/content/music/kochobai.md",
@@ -174,7 +175,7 @@ function renderAppHero(data) {
   const posterAttribute = posterUrl ? ` poster="${escapeHtml(posterUrl)}"` : "";
 
   return `
-    <section class="app-hero-media" aria-label="まるまる電卓の紹介動画">
+    <section class="app-hero-media" aria-label="${escapeHtml(data.title || "アプリ")}の紹介動画">
       <video autoplay muted loop playsinline preload="metadata"${posterAttribute}>
         <source src="${escapeHtml(videoUrl)}" type="video/webm" />
       </video>

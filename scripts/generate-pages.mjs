@@ -4,7 +4,7 @@ import path from "node:path";
 const rootDir = path.resolve(new URL("..", import.meta.url).pathname);
 const siteUrl = "https://nozomitaguchi.github.io";
 const siteTitle = "おなかの上のパソコンより";
-const cacheKey = "card-render-2";
+const cacheKey = "card-render-3";
 
 const pageImages = {
   "hokkaido-trip-en": "/assets/hokkaido-trip-en.jpg",
@@ -14,6 +14,7 @@ const pageImages = {
   "securities-sales-representative": "/assets/thumb-zenn-article.png",
   "public-page-implementation": "/assets/thumb-zenn-article.png",
   "marumaru-calculator": "/assets/marumaru-calc-thumb.png",
+  "yubisaki-canvas": "/assets/yubisaki-canvas-thumb.png",
   spira: "/assets/music-spira-scene-cover.png",
   kochobai: "/assets/music-kochobai-scene-cover.png",
   "tengoku-ga-umareta-hi": "/assets/music-tengoku-ga-umareta-hi-scene-cover.png",

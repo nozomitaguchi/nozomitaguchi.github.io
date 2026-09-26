@@ -8,6 +8,13 @@ const creationItems = [
   },
   {
     kind: "app",
+    title: "ゆびさきキャンバス",
+    note: "Touch canvas",
+    image: "./assets/yubisaki-canvas-thumb.png",
+    url: "./app/yubisaki-canvas.html",
+  },
+  {
+    kind: "app",
     title: "まるまる電卓",
     note: "Learning app",
     image: "./assets/marumaru-calc-thumb.png",
