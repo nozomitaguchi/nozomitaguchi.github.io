@@ -7,7 +7,6 @@
 ```text
 content/
   app/
-  music/
   novel/
   blog/
 ```
@@ -54,14 +53,7 @@ platform: "web"
 repositoryUrl: ""
 ```
 
-Music:
-
-```yaml
-audioUrl: "./assets/audio/example.mp3"
-audioTitle: "表示用の曲名"
-```
-
-本文には `## Lyrics` と `## Production notes` を置き、歌詞と制作ノートを同じ Markdown で管理します。
+MusicはSongtreeの1件に統合。script.jsのcreationItemsからhttps://nozomitaguchi.github.io/songtree/へ直接リンクし、assets/songtree-cover.pngをカバーとして使います。曲の歌詞・音源・Production notesはSongtree側で管理し、このリポジトリで個別曲の記事を再生成しません。
 
 Techblog / Lifelog:
 
@@ -91,7 +83,6 @@ url: "https://kakuyomu.jp/works/11054822663094452322"
 ```text
 /app/app-slug.html
 /blog/article-slug.html
-/music/song-slug.html
 /novel/novel-slug.html
 ```
 

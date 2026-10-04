@@ -1,5 +1,12 @@
 const creationItems = [
   {
+    kind: "music",
+    title: "Songtree",
+    note: "曲の履歴、歌詞、Production notes",
+    image: "./assets/songtree-cover.png",
+    url: "https://nozomitaguchi.github.io/songtree/",
+  },
+  {
     kind: "novel",
     title: "FINDER",
     note: "カメラを持つ旅人の連作小説",
@@ -19,62 +26,6 @@ const creationItems = [
     note: "Learning app",
     image: "./assets/marumaru-calc-thumb.png",
     url: "./app/marumaru-calculator.html",
-  },
-  {
-    kind: "music",
-    title: "スピラ",
-    note: "Lyrics / production notes / audio",
-    image: "./assets/music-spira-scene-cover.png",
-    url: "./music/spira.html",
-  },
-  {
-    kind: "music",
-    title: "こちょばい",
-    note: "Lyrics / production notes / audio",
-    image: "./assets/music-kochobai-scene-cover.png",
-    url: "./music/kochobai.html",
-  },
-  {
-    kind: "music",
-    title: "天国が生まれた日",
-    note: "Lyrics / production notes / audio",
-    image: "./assets/music-tengoku-ga-umareta-hi-scene-cover.png",
-    url: "./music/tengoku-ga-umareta-hi.html",
-  },
-  {
-    kind: "music",
-    title: "モノクロ",
-    note: "Lyrics / production notes / audio",
-    image: "./assets/music-monochrome-scene-cover.png",
-    url: "./music/monochrome.html",
-  },
-  {
-    kind: "music",
-    title: "またね",
-    note: "Lyrics / production notes / audio",
-    image: "./assets/music-matane-scene-cover.png",
-    url: "./music/matane.html",
-  },
-  {
-    kind: "music",
-    title: "待ち合わせ",
-    note: "Lyrics / production notes / audio",
-    image: "./assets/music-machiawase-scene-cover.png",
-    url: "./music/machiawase.html",
-  },
-  {
-    kind: "music",
-    title: "かたぐるま",
-    note: "Lyrics / production notes / audio",
-    image: "./assets/music-kataguruma-scene-cover.png",
-    url: "./music/kataguruma.html",
-  },
-  {
-    kind: "music",
-    title: "どこまでが僕？",
-    note: "Lyrics / production notes / audio",
-    image: "./assets/music-dokomade-ga-boku-scene-cover.png",
-    url: "./music/dokomade-ga-boku.html",
   },
 ];
 

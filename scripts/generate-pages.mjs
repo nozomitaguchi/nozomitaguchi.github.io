@@ -15,14 +15,6 @@ const pageImages = {
   "public-page-implementation": "/assets/thumb-zenn-article.png",
   "marumaru-calculator": "/assets/marumaru-calc-thumb.png",
   "yubisaki-canvas": "/assets/yubisaki-canvas-thumb.png",
-  spira: "/assets/music-spira-scene-cover.png",
-  kochobai: "/assets/music-kochobai-scene-cover.png",
-  "tengoku-ga-umareta-hi": "/assets/music-tengoku-ga-umareta-hi-scene-cover.png",
-  monochrome: "/assets/music-monochrome-scene-cover.png",
-  matane: "/assets/music-matane-scene-cover.png",
-  machiawase: "/assets/music-machiawase-scene-cover.png",
-  kataguruma: "/assets/music-kataguruma-scene-cover.png",
-  "dokomade-ga-boku": "/assets/music-dokomade-ga-boku-scene-cover.png",
 };
 
 function escapeHtml(value) {
@@ -186,5 +178,5 @@ await fs.rm(path.join(rootDir, "blog"), { recursive: true, force: true });
 await fs.rm(path.join(rootDir, "music"), { recursive: true, force: true });
 await fs.rm(path.join(rootDir, "app"), { recursive: true, force: true });
 await generateSection("blog");
-await generateSection("music");
+
 await generateSection("app");

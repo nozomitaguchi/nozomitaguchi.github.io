@@ -7,14 +7,6 @@ const posts = {
   "marumaru-calculator": "/content/app/marumaru-calculator.md",
   "yubisaki-canvas": "/content/app/yubisaki-canvas.md",
   finder: "/content/novel/finder.md",
-  spira: "/content/music/spira.md",
-  kochobai: "/content/music/kochobai.md",
-  matane: "/content/music/matane.md",
-  "tengoku-ga-umareta-hi": "/content/music/tengoku-ga-umareta-hi.md",
-  machiawase: "/content/music/machiawase.md",
-  monochrome: "/content/music/monochrome.md",
-  kataguruma: "/content/music/kataguruma.md",
-  "dokomade-ga-boku": "/content/music/dokomade-ga-boku.md",
 };
 
 const article = document.querySelector(".article-view");

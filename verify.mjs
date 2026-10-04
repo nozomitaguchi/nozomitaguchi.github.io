@@ -69,23 +69,13 @@ for (const check of checks) {
   await page.goto(`${url}blog/hokkaido-trip-en.html`, { waitUntil: "domcontentloaded" });
   const articleTitle = await page.locator(".article-title").textContent();
   const articleParagraphCount = await page.locator(".article-body p").count();
-  await page.goto(`${url}music/matane.html`, { waitUntil: "domcontentloaded" });
-  const musicTitle = await page.locator(".article-title").textContent();
-  const musicAudioCount = await page.locator(".music-player audio").count();
-  const musicSlugs = [
-    "spira",
-    "kochobai",
-    "tengoku-ga-umareta-hi",
-    "monochrome",
-    "matane",
-    "machiawase",
-    "kataguruma",
-    "dokomade-ga-boku",
-  ];
-  const musicPageTitles = [];
-  for (const musicSlug of musicSlugs) {
-    await page.goto(`${url}music/${musicSlug}.html`, { waitUntil: "domcontentloaded" });
-    musicPageTitles.push(await page.locator(".article-title").textContent());
+  await page.goto(url, { waitUntil: "domcontentloaded" });
+  await page.locator('[data-scope="creation"][data-filter="music"]').click();
+  const musicCard = page.locator('#creationGrid .archive-card[data-kind="music"]');
+  const musicTitle = await musicCard.locator("strong").textContent();
+  const musicHref = await musicCard.getAttribute("href");
+  if (await musicCard.count() !== 1 || musicTitle !== "Songtree" || musicHref !== "https://nozomitaguchi.github.io/songtree/") {
+    throw new Error("Music must contain only the Songtree link");
   }
 
   results.push({
@@ -111,8 +101,7 @@ for (const check of checks) {
     articleTitle,
     articleParagraphCount,
     musicTitle,
-    musicAudioCount,
-    musicPageTitles,
+    musicHref,
     errors,
   });
 
