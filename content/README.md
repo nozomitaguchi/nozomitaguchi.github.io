@@ -53,7 +53,7 @@ platform: "web"
 repositoryUrl: ""
 ```
 
-MusicはSongtreeの1件に統合。script.jsのcreationItemsからhttps://nozomitaguchi.github.io/songtree/へ直接リンクし、assets/songtree-cover.pngをカバーとして使います。曲の歌詞・音源・Production notesはSongtree側で管理し、このリポジトリで個別曲の記事を再生成しません。
+MusicはSongtreeの1件に統合。script.jsのcreationItemsからhttps://nozomitaguchi.github.io/songtree/へ直接リンクし、assets/songtree-cover-ipad.pngをカバーとして使います。曲の歌詞・音源・Production notesはSongtree側で管理し、このリポジトリで個別曲の記事を再生成しません。
 
 Techblog / Lifelog:
 
