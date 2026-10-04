@@ -4,7 +4,7 @@ const creationItems = [
     title: "Songtree",
     note: "曲の履歴、歌詞、Production notes",
     image: "./assets/songtree-cover-ipad.png",
-    url: "https://nozomitaguchi.github.io/songtree/",
+    url: "./music/songtree.html",
   },
   {
     kind: "novel",

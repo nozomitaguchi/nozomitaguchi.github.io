@@ -1,4 +1,5 @@
 const posts = {
+  songtree: "/content/music/songtree.md",
   "hokkaido-trip-en": "/content/blog/hokkaido-trip-en.md",
   "childcare-note-2023": "/content/blog/childcare-note-2023.md",
   "scala-with-cats-notes": "/content/blog/scala-with-cats-notes.md",
@@ -175,6 +176,16 @@ function renderAppHero(data) {
   `;
 }
 
+function renderSongtreeHero(data) {
+  if (data.type !== "music" || !data.thumbnail || !data.url) return "";
+  return `<figure class="novel-hero"><img src="${escapeHtml(resolveAssetUrl(data.thumbnail))}" alt="iPadに表示されたSongtree" /></figure>`;
+}
+
+function renderSongtreeLink(data) {
+  if (data.type !== "music" || !data.url) return "";
+  return `<p class="novel-link"><a href="${escapeHtml(data.url)}" target="_blank" rel="noopener noreferrer">Songtreeを開く ↗</a></p>`;
+}
+
 function renderNovelHero(data) {
   if (data.type !== "novel" || !data.thumbnail) return "";
   const imageUrl = resolveAssetUrl(data.thumbnail);
@@ -223,7 +234,7 @@ async function loadArticle() {
   titleNode.textContent = title;
   dateNode.textContent = data.displayDate || "";
   dateNode.dateTime = data.date || "";
-  bodyNode.innerHTML = `${renderAppHero(data)}${renderNovelHero(data)}${renderAudio(data)}${renderMarkdown(stripLeadingTitle(body, title))}${renderNovelLink(data)}`;
+  bodyNode.innerHTML = `${renderSongtreeHero(data)}${renderAppHero(data)}${renderNovelHero(data)}${renderAudio(data)}${renderMarkdown(stripLeadingTitle(body, title))}${renderNovelLink(data)}${renderSongtreeLink(data)}`;
 }
 
 loadArticle().catch((error) => {

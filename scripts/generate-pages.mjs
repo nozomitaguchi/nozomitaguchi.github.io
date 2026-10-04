@@ -4,9 +4,10 @@ import path from "node:path";
 const rootDir = path.resolve(new URL("..", import.meta.url).pathname);
 const siteUrl = "https://nozomitaguchi.github.io";
 const siteTitle = "おなかの上のパソコンより";
-const cacheKey = "card-render-3";
+const cacheKey = "songtree-article-1";
 
 const pageImages = {
+  songtree: "/assets/songtree-cover-ipad.png",
   "hokkaido-trip-en": "/assets/hokkaido-trip-en.jpg",
   "childcare-note-2023": "/assets/childcare-note-2023.jpg",
   "moving-and-job-change": "/assets/moving-and-job-change.jpg",
@@ -67,7 +68,7 @@ function renderPage({ slug, section, data, body }) {
   const canonicalPath = `/${section}/${slug}.html`;
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
   const ogImage = absoluteUrl(data.thumbnail || pageImages[slug]);
-  const ogType = section === "music" ? "music.song" : "article";
+  const ogType = "article";
   const backLabel = section === "blog" ? "Blog" : "Creation";
   const backHref = section === "blog" ? "/#blog" : "/#archive";
 
@@ -178,5 +179,6 @@ await fs.rm(path.join(rootDir, "blog"), { recursive: true, force: true });
 await fs.rm(path.join(rootDir, "music"), { recursive: true, force: true });
 await fs.rm(path.join(rootDir, "app"), { recursive: true, force: true });
 await generateSection("blog");
+await generateSection("music");
 
 await generateSection("app");

@@ -74,7 +74,7 @@ for (const check of checks) {
   const musicCard = page.locator('#creationGrid .archive-card[data-kind="music"]');
   const musicTitle = await musicCard.locator("strong").textContent();
   const musicHref = await musicCard.getAttribute("href");
-  if (await musicCard.count() !== 1 || musicTitle !== "Songtree" || musicHref !== "https://nozomitaguchi.github.io/songtree/") {
+  if (await musicCard.count() !== 1 || musicTitle !== "Songtree" || musicHref !== "./music/songtree.html") {
     throw new Error("Music must contain only the Songtree link");
   }
 

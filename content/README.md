@@ -6,6 +6,7 @@
 
 ```text
 content/
+  music/
   app/
   novel/
   blog/
@@ -53,7 +54,7 @@ platform: "web"
 repositoryUrl: ""
 ```
 
-MusicはSongtreeの1件に統合。script.jsのcreationItemsからhttps://nozomitaguchi.github.io/songtree/へ直接リンクし、assets/songtree-cover-ipad.pngをカバーとして使います。曲の歌詞・音源・Production notesはSongtree側で管理し、このリポジトリで個別曲の記事を再生成しません。
+MusicはSongtreeの紹介記事1件に統合。本文はcontent/music/songtree.mdを編集し、node scripts/generate-pages.mjsでmusic/songtree.htmlを生成します。script.jsのcreationItemsは紹介記事へリンクします。カバーはassets/songtree-cover-ipad.png。曲の歌詞・音源・Production notesはSongtree側で管理します。
 
 Techblog / Lifelog:
 
@@ -81,6 +82,7 @@ url: "https://kakuyomu.jp/works/11054822663094452322"
 内部記事は Markdown から静的 HTML を生成し、以下の URL で公開します。
 
 ```text
+/music/songtree.html
 /app/app-slug.html
 /blog/article-slug.html
 /novel/novel-slug.html
