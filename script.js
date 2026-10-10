@@ -1,5 +1,12 @@
 const creationItems = [
   {
+    kind: "app",
+    title: "おはなし探偵",
+    note: "文章を読んで、式をつくる算数学習アプリ",
+    image: "./assets/ohanashi-tantei-thumb.png",
+    url: "./app/ohanashi-tantei.html",
+  },
+  {
     kind: "music",
     title: "Songtree",
     note: "曲の履歴、歌詞、Production notes",

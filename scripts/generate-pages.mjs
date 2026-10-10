@@ -4,7 +4,7 @@ import path from "node:path";
 const rootDir = path.resolve(new URL("..", import.meta.url).pathname);
 const siteUrl = "https://nozomitaguchi.github.io";
 const siteTitle = "おなかの上のパソコンより";
-const cacheKey = "songtree-article-1";
+const cacheKey = "ohanashi-app-1";
 
 const pageImages = {
   songtree: "/assets/songtree-cover-ipad.png",

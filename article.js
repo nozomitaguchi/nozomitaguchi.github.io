@@ -1,4 +1,5 @@
 const posts = {
+  "ohanashi-tantei": "/content/app/ohanashi-tantei.md",
   songtree: "/content/music/songtree.md",
   "hokkaido-trip-en": "/content/blog/hokkaido-trip-en.md",
   "childcare-note-2023": "/content/blog/childcare-note-2023.md",
@@ -161,7 +162,10 @@ function resolveAssetUrl(value) {
 }
 
 function renderAppHero(data) {
-  if (!data.appHeroVideoUrl) return "";
+  if (!data.appHeroVideoUrl) {
+    if (data.type !== "app" || !data.appHeroImageUrl) return "";
+    return `<section class="app-hero-media"><img src="${escapeHtml(resolveAssetUrl(data.appHeroImageUrl))}" alt="${escapeHtml(data.title || "アプリ")}の画面" /></section>`;
+  }
 
   const videoUrl = resolveAssetUrl(data.appHeroVideoUrl);
   const posterUrl = resolveAssetUrl(data.thumbnail);

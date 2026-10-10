@@ -865,7 +865,8 @@ p {
   box-shadow: 0 24px 58px rgba(74, 61, 42, 0.1);
 }
 
-.app-hero-media video {
+.app-hero-media video,
+.app-hero-media img {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
