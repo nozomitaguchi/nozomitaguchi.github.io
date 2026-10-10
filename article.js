@@ -118,6 +118,11 @@ function renderMarkdown(markdown) {
         return `<h${level}>${renderInline(headingMatch[2])}</h${level}>`;
       }
 
+      const openLink = block.match(/^\[([^\]]+を開く)\]\((https?:\/\/[^)]+)\)$/);
+      if (openLink) {
+        return `<p class="novel-link"><a href="${escapeHtml(openLink[2])}" target="_blank" rel="noopener noreferrer">${escapeHtml(openLink[1])} ↗</a></p>`;
+      }
+
       const lines = block.split("\n");
       if (lines.every((line) => /^(\s*)-\s+(.+)$/.test(line))) {
         return renderList(lines);

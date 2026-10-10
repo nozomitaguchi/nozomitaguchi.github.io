@@ -154,7 +154,7 @@ function renderPage({ slug, section, data, body }) {
       <span>&copy; 2026 nozomitaguchi</span>
     </footer>
 
-    <script src="/article.js?v=${cacheKey}"></script>
+    <script src="/article.js?v=unified-open-buttons-1"></script>
   </body>
 </html>
 `;
