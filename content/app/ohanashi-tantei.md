@@ -2,7 +2,7 @@
 title: "おはなし探偵"
 type: "app"
 date: "2026-10-10"
-thumbnail: "./assets/ohanashi-tantei-thumb.png"
+thumbnail: "./assets/ohanashi-tantei-ipad.png"
 appHeroImageUrl: "./assets/ohanashi-tantei-screen.png"
 summary: "文章を読んで、式をつくる算数学習アプリ"
 url: "https://nozomitaguchi.github.io/ohanashi-tantei/"

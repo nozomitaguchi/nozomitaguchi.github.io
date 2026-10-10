@@ -3,7 +3,7 @@ const creationItems = [
     kind: "app",
     title: "おはなし探偵",
     note: "文章を読んで、式をつくる算数学習アプリ",
-    image: "./assets/ohanashi-tantei-thumb.png",
+    image: "./assets/ohanashi-tantei-ipad.png",
     url: "./app/ohanashi-tantei.html",
   },
   {
