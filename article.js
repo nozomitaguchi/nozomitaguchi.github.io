@@ -173,7 +173,7 @@ function renderAppHero(data) {
   }
 
   const videoUrl = resolveAssetUrl(data.appHeroVideoUrl);
-  const posterUrl = resolveAssetUrl(data.thumbnail);
+  const posterUrl = resolveAssetUrl(data.appHeroPosterUrl || data.thumbnail);
   const posterAttribute = posterUrl ? ` poster="${escapeHtml(posterUrl)}"` : "";
 
   return `
@@ -186,7 +186,7 @@ function renderAppHero(data) {
 }
 
 function renderSongtreeHero(data) {
-  if (data.type !== "music" || !data.thumbnail || !data.url) return "";
+  if (data.type !== "music" || !data.thumbnail || !data.url || data.appHeroVideoUrl) return "";
   return `<figure class="novel-hero"><img src="${escapeHtml(resolveAssetUrl(data.thumbnail))}" alt="iPadに表示されたSongtree" /></figure>`;
 }
 
