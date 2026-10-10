@@ -2,28 +2,24 @@ const creationItems = [
   {
     kind: "app",
     title: "おはなし探偵",
-    note: "文章を読んで、式をつくる算数学習アプリ",
     image: "./assets/ohanashi-tantei-equation-ipad.png",
     url: "./app/ohanashi-tantei.html",
   },
   {
     kind: "music",
     title: "Songtree",
-    note: "曲の履歴、歌詞、Production notes",
     image: "./assets/songtree-cover-ipad.png",
     url: "./music/songtree.html",
   },
   {
     kind: "novel",
     title: "FINDER",
-    note: "カメラを持つ旅人の連作小説",
     image: "./assets/finder-book-desk-photo.jpg",
     url: "./novel/finder.html",
   },
   {
     kind: "app",
     title: "ゆびさきキャンバス",
-    note: "Touch canvas",
     image: "./assets/yubisaki-canvas-thumb.png",
     url: "./app/yubisaki-canvas.html",
   },
@@ -409,7 +405,7 @@ function renderArchive(scope, filter = "all") {
           ${item.date ? `<time class="archive-date" datetime="${item.date}">${item.date}</time>` : ""}
           <span class="archive-copy">
             <strong>${item.title}</strong>
-            <small>${item.note}</small>
+            ${item.note ? `<small>${item.note}</small>` : ""}
           </span>
           <span class="visually-hidden">${item.title}を開く</span>
         </${tagName}>
