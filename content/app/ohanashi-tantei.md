@@ -14,4 +14,9 @@ platform: "web"
 repositoryUrl: "https://github.com/nozomitaguchi/ohanashi-tantei"
 ---
 
+六歳の娘は算数が得意なのですが、問題の読解力がちょっと弱そうだと思っていて、
+そういう課題感は世の中ではあるあるということでいろんな教材がありました。
+それをやってもらっている中で「これアプリだったらどこでもできるし良いな」と思って、claude に作ってもらったものになります。
+自分の創作物という感じじゃないですが、同じ課題感を持つ親にとって役立つものかもなと思ったのでここに置いておきます。
+
 [おはなし探偵を開く](https://nozomitaguchi.github.io/ohanashi-tantei/)
