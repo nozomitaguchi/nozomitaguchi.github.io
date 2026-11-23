@@ -1,7 +1,7 @@
 ---
 title: "みのまわり図鑑"
 type: "movie"
-thumbnail: "./assets/minomawari-zukan-youtube-tablet.webp"
+thumbnail: "./assets/minomawari-zukan-youtube-flatlay.webp"
 heroImageAlt: "タブレットに表示した、みのまわり図鑑のYouTubeチャンネル"
 summary: "身のまわりのものの「なぜ？」を、親子で楽しめるアニメとWeb図鑑で紹介します。"
 status: "published"
