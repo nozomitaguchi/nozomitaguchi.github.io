@@ -2,7 +2,7 @@ const creationItems = [
   {
     kind: "movie",
     title: "みのまわり図鑑（YouTube）",
-    image: "./assets/minomawari-zukan-youtube.webp",
+    image: "./assets/minomawari-zukan-youtube-light.webp",
     url: "https://youtube.com/@minomawari-zukan",
   },
   {
