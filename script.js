@@ -2,13 +2,13 @@ const creationItems = [
   {
     kind: "movie",
     title: "みのまわり図鑑（YouTube）",
-    image: "./assets/minomawari-zukan.png",
+    image: "./assets/minomawari-zukan-youtube.webp",
     url: "https://youtube.com/@minomawari-zukan",
   },
   {
     kind: "app",
     title: "みのまわり図鑑（Web）",
-    image: "./assets/minomawari-zukan.png",
+    image: "./assets/minomawari-zukan-web.webp",
     url: "https://nozomitaguchi.github.io/everyday-trivia/",
   },
   {
