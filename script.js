@@ -1,5 +1,17 @@
 const creationItems = [
   {
+    kind: "movie",
+    title: "みのまわり図鑑（YouTube）",
+    image: "./assets/minomawari-zukan.png",
+    url: "https://youtube.com/@minomawari-zukan",
+  },
+  {
+    kind: "app",
+    title: "みのまわり図鑑（Web）",
+    image: "./assets/minomawari-zukan.png",
+    url: "https://nozomitaguchi.github.io/everyday-trivia/",
+  },
+  {
     kind: "app",
     title: "おはなし探偵",
     image: "./assets/ohanashi-tantei-equation-ipad.png",
@@ -274,6 +286,7 @@ const visibleCounts = {
 
 const labels = {
   app: "App",
+  movie: "Movie",
   docswell: "Docswell",
   hatena: "Hatena",
   music: "Music",
@@ -284,6 +297,12 @@ const labels = {
 };
 
 const icons = {
+  movie: `
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="3" />
+      <path d="m10 9 5 3-5 3V9Z" />
+    </svg>
+  `,
   app: `
     <svg aria-hidden="true" viewBox="0 0 24 24">
       <rect x="5" y="4" width="14" height="16" rx="3" />
