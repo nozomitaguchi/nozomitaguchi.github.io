@@ -8,6 +8,7 @@ const posts = {
   "moving-and-job-change": "/content/blog/moving-and-job-change.md",
   "marumaru-calculator": "/content/app/marumaru-calculator.md",
   "yubisaki-canvas": "/content/app/yubisaki-canvas.md",
+  "minomawari-zukan": "/content/movie/minomawari-zukan.md",
   finder: "/content/novel/finder.md",
 };
 
@@ -195,10 +196,11 @@ function renderSongtreeLink(data) {
   return `<p class="novel-link"><a href="${escapeHtml(data.url)}" target="_blank" rel="noopener noreferrer">Songtreeを開く ↗</a></p>`;
 }
 
-function renderNovelHero(data) {
-  if (data.type !== "novel" || !data.thumbnail) return "";
+function renderCover(data) {
+  if (!data.thumbnail || (data.type !== "novel" && !data.heroImageAlt)) return "";
   const imageUrl = resolveAssetUrl(data.thumbnail);
-  return `<figure class="novel-hero"><img src="${escapeHtml(imageUrl)}" alt="FINDERの本を机に置いた写真" /></figure>`;
+  const alt = data.heroImageAlt || "FINDERの本を机に置いた写真";
+  return `<figure class="novel-hero"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(alt)}" /></figure>`;
 }
 
 function renderNovelLink(data) {
@@ -211,7 +213,7 @@ function resolveSlug() {
   if (embeddedSlug) return embeddedSlug;
 
   const pathParts = window.location.pathname.replace(/\.html$/, "").split("/").filter(Boolean);
-  if (["blog", "music", "app", "novel"].includes(pathParts[0]) && pathParts[1]) {
+  if (["blog", "music", "app", "movie", "novel"].includes(pathParts[0]) && pathParts[1]) {
     return pathParts[1];
   }
 
@@ -243,7 +245,17 @@ async function loadArticle() {
   titleNode.textContent = title;
   dateNode.textContent = data.displayDate || "";
   dateNode.dateTime = data.date || "";
-  bodyNode.innerHTML = `${renderSongtreeHero(data)}${renderAppHero(data)}${renderNovelHero(data)}${renderAudio(data)}${renderMarkdown(stripLeadingTitle(body, title))}${renderNovelLink(data)}${renderSongtreeLink(data)}`;
+  const cover = renderCover(data);
+  bodyNode.innerHTML = [
+    renderSongtreeHero(data),
+    renderAppHero(data),
+    data.type === "novel" ? cover : "",
+    renderAudio(data),
+    renderMarkdown(stripLeadingTitle(body, title)),
+    renderNovelLink(data),
+    renderSongtreeLink(data),
+    data.type === "novel" ? "" : cover,
+  ].join("");
 }
 
 loadArticle().catch((error) => {

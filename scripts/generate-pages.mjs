@@ -154,7 +154,7 @@ function renderPage({ slug, section, data, body }) {
       <span>&copy; 2026 nozomitaguchi</span>
     </footer>
 
-    <script src="/article.js?v=creation-videos-1"></script>
+    <script src="/article.js?v=creation-details-1"></script>
   </body>
 </html>
 `;
@@ -178,9 +178,11 @@ async function generateSection(section) {
 await fs.rm(path.join(rootDir, "blog"), { recursive: true, force: true });
 await fs.rm(path.join(rootDir, "music"), { recursive: true, force: true });
 await fs.rm(path.join(rootDir, "app"), { recursive: true, force: true });
+await fs.rm(path.join(rootDir, "movie"), { recursive: true, force: true });
 await generateSection("blog");
 await generateSection("music");
 
 await generateSection("app");
+await generateSection("movie");
 
 await generateSection("novel");

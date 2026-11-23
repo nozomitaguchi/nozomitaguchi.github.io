@@ -1,27 +1,28 @@
 const creationItems = [
   {
-    kind: "movie",
-    title: "みのまわり図鑑（YouTube）",
-    image: "./assets/minomawari-zukan-youtube-light.webp",
-    url: "https://youtube.com/@minomawari-zukan",
-  },
-  {
     kind: "app",
-    title: "みのまわり図鑑（Web）",
-    image: "./assets/minomawari-zukan-web.webp",
-    url: "https://nozomitaguchi.github.io/everyday-trivia/",
-  },
-  {
-    kind: "app",
-    title: "おはなし探偵",
-    image: "./assets/ohanashi-tantei-equation-ipad.png",
-    url: "./app/ohanashi-tantei.html",
+    title: "まるまる電卓",
+    note: "Learning app",
+    image: "./assets/marumaru-calc-thumb.png",
+    url: "./app/marumaru-calculator.html",
   },
   {
     kind: "music",
     title: "Songtree",
     image: "./assets/songtree-cover-ipad.png",
     url: "./music/songtree.html",
+  },
+  {
+    kind: "movie",
+    title: "みのまわり図鑑",
+    image: "./assets/minomawari-zukan-youtube-tablet.webp",
+    url: "./movie/minomawari-zukan.html",
+  },
+  {
+    kind: "app",
+    title: "おはなし探偵",
+    image: "./assets/ohanashi-tantei-equation-ipad.png",
+    url: "./app/ohanashi-tantei.html",
   },
   {
     kind: "novel",
@@ -34,13 +35,6 @@ const creationItems = [
     title: "ゆびさきキャンバス",
     image: "./assets/yubisaki-canvas-thumb.png",
     url: "./app/yubisaki-canvas.html",
-  },
-  {
-    kind: "app",
-    title: "まるまる電卓",
-    note: "Learning app",
-    image: "./assets/marumaru-calc-thumb.png",
-    url: "./app/marumaru-calculator.html",
   },
 ];
 

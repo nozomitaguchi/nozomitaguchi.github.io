@@ -8,18 +8,19 @@
 content/
   music/
   app/
+  movie/
   novel/
   blog/
 ```
 
-一覧では `app`、`music`、`novel` を Creation、`other` を Lifelog、`qiita`, `zenn`, `docswell` を Techblog として扱います。
+一覧では `app`、`music`、`movie`、`novel` を Creation、`other` を Lifelog、`qiita`, `zenn`, `docswell` を Techblog として扱います。
 
 ## Shared frontmatter
 
 ```yaml
 ---
 title: "表示タイトル"
-type: "app | music | novel | blog"
+type: "app | music | movie | novel | blog"
 source: "blog | qiita | zenn | other"
 date: "2024-12-01"
 displayDate: "2024.12"
@@ -34,11 +35,12 @@ tags: ["archive"]
 ## Fields
 
 - `title`: 必須。カードに常時表示する。
-- `type`: 必須。`app`, `music`, `novel`, `blog` のいずれか。`blog` は文章全体の大枠として扱う。
+- `type`: 必須。`app`, `music`, `movie`, `novel`, `blog` のいずれか。`blog` は文章全体の大枠として扱う。
 - `source`: `type: "blog"` のとき必須。生活ログは `other`、外部ブログは `qiita`, `zenn`, `docswell`。
 - `date`: 推奨。並び順に使う。月だけの場合も `YYYY-MM-01` にする。
 - `displayDate`: 任意。カードに表示する日付。今は Lifelog と Techblog で表示する。
 - `thumbnail`: 推奨。カードの主役になる画像。未設定ならカテゴリ別のプレースホルダーを使う。
+- `heroImageAlt`: 任意。指定するとサムネイルを記事にも表示する。値は画像の代替テキストとして使う。
 - `summary`: 推奨。常時表示せず、hover / focus 時の補足に使う。
 - `url`: 任意。外部ページや公開物がある場合に使う。
 - `status`: 必須。`published` または `draft`。
@@ -84,6 +86,7 @@ url: "https://kakuyomu.jp/works/11054822663094452322"
 ```text
 /music/songtree.html
 /app/app-slug.html
+/movie/minomawari-zukan.html
 /blog/article-slug.html
 /novel/novel-slug.html
 ```
