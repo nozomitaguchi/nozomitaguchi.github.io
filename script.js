@@ -45,7 +45,7 @@ const writingItems = [
     date: "2026.02",
     title: "2026 年初頭における Scala オンボーディングのリアル",
     note: "Scala / onboarding / FOLIO",
-    image: "./assets/scala-onboarding-2026.jpg",
+    image: "./assets/techblog/01_202602_scala_onboarding_real.webp",
     url: "https://zenn.dev/folio_sec/articles/67660adbec4beb",
   },
   {
@@ -53,7 +53,7 @@ const writingItems = [
     date: "2026.02",
     title: "Scalaエンジニアを支えるオンボーディング術",
     note: "FOLIO Meetup #1 登壇資料",
-    image: "https://bcdn.docswell.com/page/4EQYX4GRJP.jpg?width=480",
+    image: "./assets/techblog/02_202602_scala_onboarding_slide.webp",
     url: "https://www.docswell.com/s/nozomitaguchi/KYVY2V-2026-02-27-222648",
   },
   {
@@ -61,8 +61,7 @@ const writingItems = [
     date: "2025.12",
     title: "弊部リーダーとしてのオンボーディングについて",
     note: "team leadership / onboarding / FOLIO",
-    image:
-      "https://res.cloudinary.com/zenn/image/upload/s--Cb9B60pw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BC%258A%25E9%2583%25A8%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25AE%25E3%2582%25AA%25E3%2583%25B3%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nozomitaguchi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjYzYwMjI0MmIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:FOLIO%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pJejZwdTJzMTk1OEFMR0FMQlhGdVYwNDhjVmxQdWljZ2wydnI5MlE9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    image: "./assets/techblog/03_202512_leader_onboarding.webp",
     url: "https://zenn.dev/folio_sec/articles/5d64803a2eeadc",
   },
   {
@@ -70,8 +69,7 @@ const writingItems = [
     date: "2025.11",
     title: "4RAP におけるバッチ開発の工夫について",
     note: "batch processing / Scala / FOLIO",
-    image:
-      "https://res.cloudinary.com/zenn/image/upload/s--51PCI_ns--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:4RAP%2520%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2591%25E3%2582%258B%25E3%2583%2590%25E3%2583%2583%25E3%2583%2581%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AE%25E5%25B7%25A5%25E5%25A4%25AB%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nozomitaguchi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjYzYwMjI0MmIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:FOLIO%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pJejZwdTJzMTk1OEFMR0FMQlhGdVYwNDhjVmxQdWljZ2wydnI5MlE9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    image: "./assets/techblog/04_202511_4rap_batch_dev.webp",
     url: "https://zenn.dev/folio_sec/articles/6e3f26351d20fe",
   },
   {
@@ -79,7 +77,7 @@ const writingItems = [
     date: "2025.06",
     title: "JJUG CCC 2025 Spring へのブース参加と準備などの記録",
     note: "event report / JJUG CCC / FOLIO",
-    image: "./assets/jjug-ccc-2025-spring-booth.png",
+    image: "./assets/techblog/05_202506_jjug_ccc_booth.webp",
     url: "https://zenn.dev/folio_sec/articles/db29f8cd77f33f",
   },
   {
@@ -87,7 +85,7 @@ const writingItems = [
     date: "2025.06",
     title: "JJUG2025Springのブーススポンサー特典LTの登壇資料",
     note: "JJUG CCC 2025 Spring LT",
-    image: "https://bcdn.docswell.com/page/2EVX3DG3JQ.jpg?width=480",
+    image: "./assets/techblog/06_202506_jjug_ccc_lt_slide.webp",
     url: "https://www.docswell.com/s/nozomitaguchi/5DN1M9-JJUG2025SpringLT",
   },
   {
@@ -95,8 +93,7 @@ const writingItems = [
     date: "2025.05",
     title: "Java エンジニアになって FOLIO に入るまで",
     note: "career / Java / Scala",
-    image:
-      "https://res.cloudinary.com/zenn/image/upload/s--POA-Xleo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Java%2520%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%25A6%2520FOLIO%2520%25E3%2581%25AB%25E5%2585%25A5%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nozomitaguchi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjYzYwMjI0MmIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:FOLIO%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pJejZwdTJzMTk1OEFMR0FMQlhGdVYwNDhjVmxQdWljZ2wydnI5MlE9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    image: "./assets/techblog/07_202505_java_engineer_to_folio.webp",
     url: "https://zenn.dev/folio_sec/articles/5b6d06d3692259",
   },
   {
@@ -104,8 +101,7 @@ const writingItems = [
     date: "2025.05",
     title: "8 以降 Java に触れてない Scala エンジニア、Java の書き方を学び直す",
     note: "Java / Scala / interview",
-    image:
-      "https://res.cloudinary.com/zenn/image/upload/s--90MmkW-L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:8%2520%25E4%25BB%25A5%25E9%2599%258D%2520Java%2520%25E3%2581%25AB%25E8%25A7%25A6%25E3%2582%258C%25E3%2581%25A6%25E3%2581%25AA%25E3%2581%2584%2520Scala%2520%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2580%2581Java%2520%25E3%2581%25AE%25E6%259B%25B8%25E3%2581%258D%25E6%2596%25B9%25E3%2582%2592%25E5%25AD%25A6%25E3%2581%25B3%25E7%259B%25B4%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nozomitaguchi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjYzYwMjI0MmIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:FOLIO%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pJejZwdTJzMTk1OEFMR0FMQlhGdVYwNDhjVmxQdWljZ2wydnI5MlE9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    image: "./assets/techblog/08_202505_relearning_java_from_scala.webp",
     url: "https://zenn.dev/folio_sec/articles/eb23deb09f2731",
   },
   {
@@ -113,7 +109,7 @@ const writingItems = [
     date: "2025.03",
     title: "Scalaで灰色問題を解いた時に面白く感じたことや関数など",
     note: "Scala / learning / FOLIO",
-    image: "./assets/scala-gray-problem.jpg",
+    image: "./assets/techblog/09_202503_scala_gray_problems.webp",
     url: "https://zenn.dev/folio_sec/articles/f48210cebf2ba9",
   },
   {
@@ -121,7 +117,7 @@ const writingItems = [
     date: "2025.03",
     title: "Scalaワイワイ勉強会#5LT登壇資料",
     note: "Scalaワイワイ勉強会 #5 LT",
-    image: "https://bcdn.docswell.com/page/P7RM1D2KJ9.jpg?width=480",
+    image: "./assets/techblog/10_202503_scala_waiwai_lt_slide.webp",
     url: "https://www.docswell.com/s/nozomitaguchi/ZDNVE8-2025-03-14",
   },
   {
@@ -129,8 +125,7 @@ const writingItems = [
     date: "2025.03",
     title: "ロギングの考慮を含んだ時に生まれる設計書と実装の差異について",
     note: "logging / design document / implementation",
-    image:
-      "https://res.cloudinary.com/zenn/image/upload/s--jOzSUMPR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AD%25E3%2582%25AE%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%25AE%25E8%2580%2583%25E6%2585%25AE%25E3%2582%2592%25E5%2590%25AB%25E3%2582%2593%25E3%2581%25A0%25E6%2599%2582%25E3%2581%25AB%25E7%2594%259F%25E3%2581%25BE%25E3%2582%258C%25E3%2582%258B%25E8%25A8%25AD%25E8%25A8%2588%25E6%259B%25B8%25E3%2581%25A8%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%25AE%25E5%25B7%25AE%25E7%2595%25B0%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nozomitaguchi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjYzYwMjI0MmIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:FOLIO%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pJejZwdTJzMTk1OEFMR0FMQlhGdVYwNDhjVmxQdWljZ2wydnI5MlE9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    image: "./assets/techblog/11_202503_logging_spec_vs_impl.webp",
     url: "https://zenn.dev/folio_sec/articles/8617deaa58e95a",
   },
   {
@@ -138,8 +133,7 @@ const writingItems = [
     date: "2025.03",
     title: "弊チームにおけるチュートリアルやオンボーディングプランについて",
     note: "tutorial / onboarding / Scala",
-    image:
-      "https://res.cloudinary.com/zenn/image/upload/s--wRb1xVx7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BC%258A%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2591%25E3%2582%258B%25E3%2583%2581%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25A2%25E3%2583%25AB%25E3%2582%2584%25E3%2582%25AA%25E3%2583%25B3%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%2597%25E3%2583%25A9%25E3%2583%25B3%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nozomitaguchi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjYzYwMjI0MmIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:FOLIO%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pJejZwdTJzMTk1OEFMR0FMQlhGdVYwNDhjVmxQdWljZ2wydnI5MlE9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    image: "./assets/techblog/12_202503_team_tutorial_onboarding.webp",
     url: "https://zenn.dev/folio_sec/articles/c3fd36dfc69797",
   },
   {
@@ -171,6 +165,7 @@ const writingItems = [
     date: "2022.04",
     title: "Cats のデータ型覚え書き(Ior ~ Either, Validated との比較など ~)",
     note: "Scala / cats / ior",
+    image: "./assets/techblog/13_202204_cats_ior.webp",
     url: "https://qiita.com/nozomitaguchi/items/5ff98b3666efde21de02",
   },
   {
@@ -178,6 +173,7 @@ const writingItems = [
     date: "2022.04",
     title: "Cats の関数覚え書き(Parallel)",
     note: "Scala / Parallel / cats",
+    image: "./assets/techblog/14_202204_cats_parallel.webp",
     url: "https://qiita.com/nozomitaguchi/items/68e40aefa8d70c8e704e",
   },
   {
@@ -185,6 +181,7 @@ const writingItems = [
     date: "2022.02",
     title: "Cats のデータ型覚え書き(Validated ~ Either との使い分けなど ~)",
     note: "Scala / cats / Validated",
+    image: "./assets/techblog/15_202202_cats_validated.webp",
     url: "https://qiita.com/nozomitaguchi/items/66bbee966e59281a68e8",
   },
   {
@@ -192,6 +189,7 @@ const writingItems = [
     date: "2022.02",
     title: "Cats のデータ型覚え書き(NonEmptyList)",
     note: "Scala / cats / NonEmptyList",
+    image: "./assets/techblog/16_202202_cats_non_empty_list.webp",
     url: "https://qiita.com/nozomitaguchi/items/40dd6a4ad23afb889f69",
   },
   {
@@ -199,6 +197,7 @@ const writingItems = [
     date: "2021.12",
     title: "Cats の関数覚え書き",
     note: "Scala / cats / Alternative / Align / CoflatMap",
+    image: "./assets/techblog/17_202112_cats_functions_memo.webp",
     url: "https://developers.microad.co.jp/entry/2021/12/13/120000",
   },
   {
@@ -206,6 +205,7 @@ const writingItems = [
     date: "2021.11",
     title: "Cats の関数覚え書き(Foldable, Reducible, Traverse, TraverseFilter)",
     note: "Scala / cats",
+    image: "./assets/techblog/18_202111_cats_foldable_traverse.webp",
     url: "https://qiita.com/nozomitaguchi/items/7e8da5f2d7439a140d65",
   },
   {
@@ -213,6 +213,7 @@ const writingItems = [
     date: "2021.11",
     title: "Cats の関数覚え書き(Semigroup, Monoid)",
     note: "Scala / cats",
+    image: "./assets/techblog/19_202111_cats_semigroup_monoid.webp",
     url: "https://qiita.com/nozomitaguchi/items/b65d9720242bd43ebcaa",
   },
   {
@@ -220,6 +221,7 @@ const writingItems = [
     date: "2021.11",
     title: "Cats の関数覚え書き(ApplicativeError, MonadError)",
     note: "Scala / cats",
+    image: "./assets/techblog/20_202111_cats_applicative_monad_error.webp",
     url: "https://qiita.com/nozomitaguchi/items/a74d9bfe67ae63530222",
   },
   {
@@ -227,6 +229,7 @@ const writingItems = [
     date: "2021.11",
     title: "Cats の関数覚え書き(Functor, Apply, Applicative, FlatMap)",
     note: "Scala / cats",
+    image: "./assets/techblog/21_202111_cats_functor_flatmap.webp",
     url: "https://qiita.com/nozomitaguchi/items/24ab70f921f1e013d49b",
   },
   {
@@ -234,7 +237,7 @@ const writingItems = [
     date: "2021.08",
     title: "Scala With Cats を読む前に知っておきたかったこと",
     note: "Scala / cats / reading notes",
-    image: "./assets/cats-fp-concepts.png",
+    image: "./assets/techblog/22_202108_before_scala_with_cats.webp",
     url: "https://developers.microad.co.jp/entry/2021/08/10/063000",
   },
   {
@@ -242,6 +245,7 @@ const writingItems = [
     date: "2021.05",
     title: "Kotlin の標準関数覚え書き(Scala との比較等)",
     note: "Scala / Kotlin",
+    image: "./assets/techblog/23_202105_kotlin_vs_scala.webp",
     url: "https://qiita.com/nozomitaguchi/items/a757f895ba1e8801aa06",
   },
 ];
