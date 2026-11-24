@@ -9,7 +9,8 @@ const posts = {
   "marumaru-calculator": "/content/app/marumaru-calculator.md",
   "yubisaki-canvas": "/content/app/yubisaki-canvas.md",
   "minomawari-zukan": "/content/movie/minomawari-zukan.md",
-  finder: "/content/novel/finder.md",
+  finder: "/content/novel/vibe-writing.md",
+  "vibe-writing": "/content/novel/vibe-writing.md",
 };
 
 const article = document.querySelector(".article-view");
@@ -117,6 +118,11 @@ function renderMarkdown(markdown) {
       if (headingMatch) {
         const level = Math.min(headingMatch[1].length + 1, 4);
         return `<h${level}>${renderInline(headingMatch[2])}</h${level}>`;
+      }
+
+      const imageMatch = block.match(/^!\[([^\]]*)\]\((\/assets\/[a-zA-Z0-9._-]+)\)$/);
+      if (imageMatch) {
+        return `<figure class="novel-hero"><img src="${escapeHtml(imageMatch[2])}" alt="${escapeHtml(imageMatch[1])}" loading="lazy" /></figure>`;
       }
 
       const openLink = block.match(/^\[([^\]]+を開く)\]\((https?:\/\/[^)]+)\)$/);

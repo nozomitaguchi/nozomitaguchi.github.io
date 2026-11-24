@@ -26,9 +26,9 @@ const creationItems = [
   },
   {
     kind: "novel",
-    title: "FINDER",
-    image: "./assets/finder-book-desk-photo.jpg",
-    url: "./novel/finder.html",
+    title: "バイブライティング（小説）",
+    image: "./assets/novels-bookshelf.png",
+    url: "./novel/vibe-writing.html",
   },
   {
     kind: "app",
