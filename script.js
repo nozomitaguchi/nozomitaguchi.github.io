@@ -14,6 +14,7 @@ const creationItems = [
   },
   {
     kind: "movie",
+    additionalKinds: ["app"],
     title: "みのまわり図鑑",
     image: "./assets/minomawari-zukan-youtube-angled.webp",
     url: "./movie/minomawari-zukan.html",
@@ -388,9 +389,13 @@ function resolveThumbnail(item) {
   return "";
 }
 
+function archiveKinds(item) {
+  return [item.kind, ...(item.additionalKinds || [])];
+}
+
 function renderArchive(scope, filter = "all") {
   const items = itemGroups[scope];
-  const filteredItems = filter === "all" ? items : items.filter((item) => item.kind === filter);
+  const filteredItems = filter === "all" ? items : items.filter((item) => archiveKinds(item).includes(filter));
   const visibleItems = filteredItems.slice(0, visibleCounts[scope]);
   const moreButton = document.querySelector(`[data-more-scope="${scope}"]`);
   const hiddenItemCount = Math.max(filteredItems.length - visibleItems.length, 0);
@@ -406,6 +411,9 @@ function renderArchive(scope, filter = "all") {
     .map((item) => {
       const tagName = "a";
       const attributes = `href="${item.url}"`;
+      const kindLabels = archiveKinds(item)
+        .map((kind) => `${icons[kind]}<span>${labels[kind]}</span>`)
+        .join(" ");
       const resolvedThumbnail = resolveThumbnail(item);
       const thumbnail = resolvedThumbnail
         ? `<img class="archive-thumb" src="${resolvedThumbnail}" alt="${item.title}" />`
@@ -414,7 +422,7 @@ function renderArchive(scope, filter = "all") {
       return `
         <${tagName} class="archive-card" data-kind="${item.kind}" ${attributes}>
           ${thumbnail}
-          <span class="archive-kind">${icons[item.kind]}<span>${labels[item.kind]}</span></span>
+          <span class="archive-kind">${kindLabels}</span>
           ${item.date ? `<time class="archive-date" datetime="${item.date}">${item.date}</time>` : ""}
           <span class="archive-copy">
             <strong>${item.title}</strong>
