@@ -18,7 +18,6 @@ tags: ["novel", "AI"]
 ![FINDERの装丁イメージ](/assets/finder-book.png)
 
 旅人カイが、カメラで幸せを撮る。すると、世界が移る。
-自作の歌詞を作る中で思い描いていた物語をもとにした連作です。
 
 [カクヨムで『FINDER』を読む](https://kakuyomu.jp/works/11054822663094452322)
 
