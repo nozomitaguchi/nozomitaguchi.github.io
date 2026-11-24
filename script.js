@@ -141,7 +141,7 @@ const writingItems = [
     date: "2024.12",
     title: "北海道旅行に至る縁",
     note: "life log",
-    image: "./assets/hokkaido-trip-en.jpg",
+    image: "./assets/hokkaido-trip-en-watercolor.webp",
     url: "./blog/hokkaido-trip-en.html",
   },
   {
@@ -149,7 +149,7 @@ const writingItems = [
     date: "2023.12",
     title: "娘の保育園の連絡帳で振り返る2023年",
     note: "life log",
-    image: "./assets/childcare-note-2023.jpg",
+    image: "./assets/childcare-note-2023-watercolor.webp",
     url: "./blog/childcare-note-2023.html",
   },
   {
@@ -157,7 +157,7 @@ const writingItems = [
     date: "2022.12",
     title: "引越しと転職",
     note: "life log",
-    image: "./assets/moving-and-job-change.jpg",
+    image: "./assets/moving-and-job-change-watercolor.webp",
     url: "./blog/moving-and-job-change.html",
   },
   {
